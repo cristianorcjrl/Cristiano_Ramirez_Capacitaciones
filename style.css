@@ -1,0 +1,254 @@
+.container {
+  max-width: 1100px;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+header {
+  background-image: url(assets/cap11.jpg);
+  background-size: cover;
+  height: 550px;
+  position: relative;
+}
+
+
+.title {
+  color: #ff29e3;
+  font-size: 20px;
+  position: absolute;
+  transform: translatey(-40%);
+  animation-direction: alternate;
+  font-family: "Open Sans", sans-serif;
+
+  animation-name: slogan;
+  animation-duration: 15s;
+  animation-iteration-count: 1;
+}
+@keyframes slogan {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.modal-title {
+  font-weight: bold;
+  font-size: 25px;
+}
+.btn {
+  border-radius: 18px;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: bold;
+  background-color: #60cbeb;
+}
+.logo {
+  width: 250px;
+  animation-name: efecto;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+}
+@keyframes efecto {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 250px;
+  }
+}
+
+#row-capacitaciones {
+  background-color: #02bbe4;
+}
+.row {
+  margin: 0;
+}
+#row-capacitaciones img {
+  border-radius: 50%;
+  width: 220px;
+  height: 210px;
+}
+#row-capacitaciones .btn {
+  background-color: black;
+}
+
+#row-capacitaciones .btn:hover {
+  transform: scale(1, 1.3) !important;
+}
+#row-capacitaciones .ce, .cp, .ns{
+  font-weight: bold;
+  color: black;
+}
+
+#row-nosotros {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(assets/cap8.jpg);
+  background-size: cover;
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
+}
+
+#row-nosotros img {
+  border-radius: 50%;
+  width: 250px;
+  background-color: black;
+  border-color: #5080e5;
+}
+
+#row-nosotros p {
+  font-size: 16px;
+}
+#row-datos {
+  background-color: #02bbe4;
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
+}
+#row-datos h1 {
+  color: #ff29e3;
+}
+.circulo {
+  background-size: cover;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-color: #1c1711;
+}
+.nummer1 {
+  animation-name: logito;
+  animation-duration: 1s;
+  animation-iteration-count: 7;
+}
+@keyframes logito {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.nummer2 {
+  animation-name: logito;
+  animation-duration: 1s;
+  animation-iteration-count: 3;
+}
+@keyframes logito {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.nummer3 {
+  animation-name: logito;
+  animation-duration: 1s;
+  animation-iteration-count: 5;
+}
+@keyframes logito {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.nummer4 {
+  animation-name: logito;
+  animation-duration: 1s;
+  animation-iteration-count: 4;
+}
+@keyframes logito {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#row-contacto {
+  background-image: url(assets/cap15.jpg);
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#row-contacto .btn {
+  background-color: #02bbe4;
+}
+#row-contacto .btn:hover {
+  background-color: white;
+}
+
+.form-control {
+  border-radius: 20px;
+}
+footer {
+  background-color: #02bbe4;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+footer p,
+a {
+  color: black;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #ff29e3;
+}
+.city:hover {
+  color: black;
+}
+
+@media (max-width: 992px) {
+  .navbar-nav {
+    background-color: #02bbe4;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-left: 20px;
+  }
+}
+nav {
+  z-index: 100;
+}
+@media (max-width: 576px) {
+  header {
+    height: 70vh;
+  }
+
+  .logo {
+    width: 120px;
+    animation-name: efecto;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+  }
+  @keyframes efecto {
+    from {
+      width: 10px;
+    }
+    to {
+      width: 120px;
+    }
+  }
+  .title {
+    display: none;
+  }
+  #row-capacitaciones img {
+    border-radius: 50%;
+    width: 140px;
+    height: 130px;
+  }
+  #row-nosotros img {
+    width: 170px;
+  }
+
+  .mapa {
+    display: none;
+  }
+}
